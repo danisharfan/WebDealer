@@ -1,0 +1,225 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 60px; /* Tambahkan padding bawah untuk menghindari konten tertutup footer */
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1.title {
+  font-size: 2.5em;
+  color: #0d5bcf;
+}
+
+h3.desc {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Navigation */
+#navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0d5bcf;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #ffdd57;
+}
+
+/* Content Styling */
+#content {
+  width: 100%;
+  margin: 80px auto 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+p {
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Image Styling */
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* Pastikan body memenuhi seluruh tinggi layar */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Container agar konten terdorong ke atas, footer tetap di bawah */
+.container {
+  flex: 1;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grid untuk produk agar rapi */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 100px; /* Ruang ekstra untuk footer */
+}
+
+/* Styling kartu produk */
+.product-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Footer agar full width dan menempel di bawah */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
+#content {
+  margin-bottom: 20px; /* Supaya tidak tertutup footer */
+}
+
+
+.slideshow-container {
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 500px; /* Sesuaikan tinggi sesuai keinginan */
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Navigasi slideshow */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px; /* Lebih besar */
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.3s;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Dots */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fade Animation */
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
